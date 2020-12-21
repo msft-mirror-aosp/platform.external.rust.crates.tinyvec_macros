@@ -1,5 +1,8 @@
 #![no_std]
 
+// ANDROID: Unconditionally use std to allow building as a dylib.
+extern crate std;
+
 #[macro_export]
 macro_rules! impl_mirrored {
     {
